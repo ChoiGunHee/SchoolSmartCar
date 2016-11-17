@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_voice_control"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.dku.smartcar.smartcarcontroller.VoiceActivity">
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/leftButton"
+        tools:ignore="HardcodedText"
+        android:layout_marginEnd="12dp"
+        android:layout_alignTop="@+id/stopButton"
+        android:layout_toStartOf="@+id/stopButton" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/frontButton"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentTop="true"
+        android:layout_toStartOf="@+id/rightButton" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/rearButton"
+        tools:ignore="HardcodedText"
+        android:layout_alignParentBottom="true"
+        android:layout_alignStart="@+id/stopButton" />
+
+    <Button
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:id="@+id/rightButton"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/rearButton"
+        android:layout_alignParentEnd="true" />
+
+    <Button
+        android:text="Stop"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:id="@+id/stopButton"
+        tools:ignore="HardcodedText"
+        android:layout_above="@+id/rearButton"
+        android:layout_toStartOf="@+id/rightButton" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="140dp"
+        android:layout_height="140dp"
+        android:layout_marginStart="57dp"
+        android:id="@+id/voice_button"
+        android:layout_above="@+id/rearButton"
+        android:layout_alignParentStart="true"
+        tools:ignore="HardcodedText"
+        android:onClick="voiceOnclick2"/>
+
+</RelativeLayout>
